@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { DoctorService } from '../services/doctor.service';
+import { Doctor } from '../models/doctor.model';
+import { Department } from '../models/department.model';
 
 
 @Component({
@@ -10,10 +12,10 @@ import { DoctorService } from '../services/doctor.service';
 export class AddDoctorFormComponent {
   doctorName = '';
   department = '';
-  doctors: any[] = [];
+  doctors: Doctor[] = [];
 
-departments: any[] = [];
-filteredDepartments: any[] = [];
+departments: Department [] = [];
+filteredDepartments: Department[] = [];
 
   constructor(private doctorService:DoctorService) {}
 
@@ -23,16 +25,16 @@ filteredDepartments: any[] = [];
   }
 
   getAllDoctors() {
-  this.doctorService.getDoctors().subscribe((res: any) => {
+  this.doctorService.getDoctors().subscribe((res: Department[]) => {
     this.departments = res;
-    this.filteredDepartments = res; // default show all
+    this.filteredDepartments = res;
   });
 }
 
  searchDoctor() {
   console.log(this.doctorName)
-  this.filteredDepartments = this.departments.map(dept => {
-    const filteredDocs = dept.doctors.filter((doc: any) => {
+  this.filteredDepartments = this.departments.map((dept:Department) => {
+    const filteredDocs = dept.doctors.filter((doc: Doctor) => {
       const nameMatch = this.doctorName ? doc.name.toLowerCase().includes(this.doctorName.toLowerCase()) : true;
       const deptMatch = this.department ? dept.name === this.department : true;
       return nameMatch && deptMatch;

@@ -6,13 +6,13 @@
   <div class="search-box">
     <div class="field">
       <label>Doctor Name</label>
-      <input type="text" [(ngModel)]="doctorName" />
+      <input type="text" [(ngModel)]="doctorName" (input)="searchDoctor()" />
     </div>
 
     <div class="field">
       <label>Department Name</label>
       <select [(ngModel)]="department" (change)="searchDoctor()">
-        <option value="">Select</option>
+        <option value="">All Departments</option>
         <option  *ngFor=" let dept of departments" [value]="dept.name">
           {{dept.name}}
         </option>
@@ -28,7 +28,7 @@
 
     <div class="card" *ngFor="let doc of dept.doctors">
       <div class="img-box">
-        <span>Doctor Image</span>
+         <img src="{{doc.image}}" alt="">
       </div>
 
       <div class="info">
