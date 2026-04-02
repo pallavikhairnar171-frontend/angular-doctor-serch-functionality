@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000/departments'
+  apiUrl: 'https://angular-doctor-serch-functionality-1.onrender.com/departments'
 };
