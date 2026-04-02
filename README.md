@@ -2,9 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
-git clone https://github.com/pallavikhairnar171-frontend/angular-doctor-serch-functionality.git
+git clone https://github.com/pallavikhairnar171-frontend/angular-doctor-serch-functionality.git.
+
+
 cd angular-doctor-serch-functionality
+
+
 npm install
+
+
 ng serve
 
 
