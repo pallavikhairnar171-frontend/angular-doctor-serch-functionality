@@ -1,0 +1,64 @@
+{
+
+  "departments": [
+    {
+      "name": "General Physician",
+      "doctors": [
+        { "id": 1, "name": "Dr. Kumaravel", "degree": "MBBS, FRCS", "image": "" },
+        { "id": 2, "name": "Dr. Arunkumar", "degree": "MBBS, FRCS", "image": "" },
+        { "id": 3, "name": "Dr. Sandeep", "degree": "MBBS, MD", "image": "" },
+        { "id": 4, "name": "Dr. Neha Sharma", "degree": "MBBS, MD", "image": "" }
+      ]
+    },
+    {
+      "name": "Cardiology",
+      "doctors": [
+        { "id": 5, "name": "Dr. Rajkumar", "degree": "MBBS, MD, DNB - Cardiology", "image": "" },
+        { "id": 6, "name": "Dr. Mehta", "degree": "MBBS, DM - Cardiology", "image": "" },
+        { "id": 7, "name": "Dr. Rakesh Verma", "degree": "MBBS, DM", "image": "" }
+      ]
+    },
+    {
+      "name": "Orthopedics",
+      "doctors": [
+        { "id": 8, "name": "Dr. Patel", "degree": "MBBS, MS - Orthopedics", "image": "" },
+        { "id": 9, "name": "Dr. Singh", "degree": "MBBS, DNB - Orthopedics", "image": "" }
+      ]
+    },
+    {
+      "name": "Neurology",
+      "doctors": [
+        { "id": 10, "name": "Dr. Amit Gupta", "degree": "MBBS, DM - Neurology", "image": "" },
+        { "id": 11, "name": "Dr. Kavita Joshi", "degree": "MBBS, MD - Neurology", "image": "" }
+      ]
+    },
+    {
+      "name": "Dermatology",
+      "doctors": [
+        { "id": 12, "name": "Dr. Reddy", "degree": "MBBS, MD - Dermatology", "image": "" },
+        { "id": 13, "name": "Dr. Iyer", "degree": "MBBS, DDVL", "image": "" }
+      ]
+    },
+    {
+      "name": "Pediatrics",
+      "doctors": [
+        { "id": 14, "name": "Dr. Khan", "degree": "MBBS, MD - Pediatrics", "image": "" },
+        { "id": 15, "name": "Dr. Gupta", "degree": "MBBS, DCH", "image": "" }
+      ]
+    },
+    {
+      "name": "ENT",
+      "doctors": [
+        { "id": 16, "name": "Dr. Nair", "degree": "MBBS, MS - ENT", "image": "" },
+        { "id": 17, "name": "Dr. Das", "degree": "MBBS, DNB - ENT", "image": "" }
+      ]
+    },
+    {
+      "name": "Gynecology",
+      "doctors": [
+        { "id": 18, "name": "Dr. Choudhary", "degree": "MBBS, MD - Gynecology", "image": "" },
+        { "id": 19, "name": "Dr. Priya Kulkarni", "degree": "MBBS, DGO", "image": "" }
+      ]
+    }
+  ]
+}
