@@ -12,6 +12,7 @@ import { Department } from '../models/department.model';
 export class AddDoctorFormComponent {
   doctorName = '';
   department = '';
+  loading = true;
   doctors: Doctor[] = [];
 
 departments: Department [] = [];
@@ -26,8 +27,10 @@ filteredDepartments: Department[] = [];
 
   getAllDoctors() {
   this.doctorService.getDoctors().subscribe((res: Department[]) => {
+
     this.departments = res;
     this.filteredDepartments = res;
+    this.loading=false;
   });
 }
 

@@ -22,6 +22,8 @@
     <button (click)="searchDoctor()">Search</button>
   </div>
 
+ 
+
  <!-- Result of after serch -->
   <div class="result" *ngFor="let dept of filteredDepartments">
     <h3 class="dept-title">{{dept.name}}</h3>
@@ -38,6 +40,9 @@
     </div>
   </div>
 </div>
-<p class="noRecord" *ngIf="filteredDepartments.length === 0">
+<p class="noRecord" *ngIf="filteredDepartments.length === 0 && !loading">
   No doctors found
 </p>
+ <div *ngIf="loading" class="spinner-container">
+  <div class="spinner"></div>
+</div>
