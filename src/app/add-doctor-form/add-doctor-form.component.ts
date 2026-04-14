@@ -49,4 +49,10 @@ filteredDepartments: Department[] = [];
     };
   }).filter(dept => dept.doctors.length > 0);
 }
+
+clearSearch() {
+  this.doctorName = '';
+  this.department = '';
+  this.filteredDepartments = this.departments; 
+ }
 }
