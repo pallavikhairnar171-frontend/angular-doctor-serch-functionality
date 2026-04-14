@@ -4,20 +4,22 @@
   <h2 class="title">Our Specialities</h2>
 
   <div class="search-box">
-    <div class="field">
-      <label>Doctor Name</label>
-      <input type="text" [(ngModel)]="doctorName" (input)="searchDoctor()" />
-    </div>
-
-    <div class="field">
+     <div class="field">
       <label>Department Name</label>
-      <select [(ngModel)]="department" (change)="searchDoctor()">
+      <select [(ngModel)]="department" >
         <option value="">All Departments</option>
         <option  *ngFor=" let dept of departments" [value]="dept.name">
           {{dept.name}}
         </option>
       </select>
     </div>
+
+    <div class="field">
+      <label>Doctor Name</label>
+      <input type="text" [(ngModel)]="doctorName"  />
+    </div>
+
+   
 
     <button (click)="searchDoctor()">Search</button>
   </div>
