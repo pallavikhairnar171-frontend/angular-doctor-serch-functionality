@@ -22,7 +22,7 @@
    
 
     <button (click)="searchDoctor()">Search</button>
-    <button *ngIf="department || doctorName" (click)="clearSearch()">Clear</button>
+    <button  (click)="department || doctorName ?clearSearch():null">Clear</button>
   </div>
 
  
